@@ -1,0 +1,89 @@
+/* TwoColumnLayout.css */
+/* ... (previous styles remain unchanged) */
+
+.vertical-line {
+    position: relative;
+  }
+  
+  .vertical-line::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 2px solid #3498db; /* Color of the vertical line */
+    transform: translateX(-50%);
+  }
+  
+  /* ... (remaining styles remain unchanged) */
+/* TwoColumnLayout.css */
+/* ... (previous styles remain unchanged) */
+/* EndSection.css */
+
+  
+  .end-column {
+    margin-bottom: 30px;
+  }
+  
+  .end-heading {
+    text-align: center;
+    color: #9babb6;
+    text-decoration: underline;
+    font-size:30px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ 
+  text-shadow: 0 0 10px rgba(3, 44, 71, 0.8); /* Colored shadow with a glow effect */;
+  
+  }
+  
+  .list-unstyled li {
+    color: wheat;
+    padding: 5px 0;
+    text-shadow: 0 0 10px rgba(138, 188, 222, 0.8);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    transition: color 0.3s;
+    list-style: disc inside; /* Add bullet points inside the list items */
+  }
+  /* Style the newsletter input and button as needed */
+  /* For example: */
+  .end-column input,
+  .end-column button {
+    margin-top: 10px;
+    padding: 8px;
+    width: 100%;
+  }
+.end-column p{
+    color: wheat;
+    padding: 5px 0;
+    text-shadow: 0 0 10px rgba(138, 188, 222, 0.8); /* Color for the list items */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+  
+  .social-icons {
+    display: flex;
+    gap: 20px; /* Adjust the gap between social media icons */
+    margin-top: 10px;
+  }
+  
+  .social-icons .icon {
+    font-size: 24px; /* Adjust the size of social media icons */
+    color: #8ae1f9; /* Default color */
+    transition: color 0.3s; /* Add a smooth transition for color change */
+  }
+  .list-unstyled li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: #3498db;
+    color: #fff;
+  }
+  .social-icons .icon:hover {
+    color: #fff; /* Change color on hover */
+  }
+  @media (min-width: 768px) {
+    .list-unstyled {
+      column-count: 2;
+      column-gap: 20px;
+    }
+}

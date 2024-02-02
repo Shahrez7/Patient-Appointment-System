@@ -1,0 +1,114 @@
+
+.left-column {
+    
+    color: white;
+    padding: 10;
+    display: flex;
+    align-items: center;
+  }
+  
+  .left-content {
+    max-width: 80%;
+  }
+  
+  .left-content h1 {
+    font-size:50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color:cornflowerblue;
+   
+    text-decoration:underline;
+    text-shadow: 0 0 10px rgba(10, 152, 247, 0.8); /* Colored shadow with a glow effect */;
+   
+  }
+  
+  .left-content p {
+    font-size: 18px;
+    
+    text-shadow: 0 0 10px rgba(10, 152, 247, 0.8); /* Colored shadow with a glow effect */;
+    color: rgb(233, 242, 249);
+    
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .animated-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .animated-button:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+  }
+  
+  .animated-button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease, height 0.3s ease;
+  }
+  
+  .animated-button:hover::before {
+    width: 300%;
+    height: 300%;
+  }
+  
+  .right-column {
+  
+    color: white;
+    padding: 20px;
+  }
+  
+  .slideshow {
+    border: 5px solid #3498db;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .slideshow img {
+    height: 600px; /* Adjust the height as needed */
+    width: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the entire space */
+  }
+  .caption {
+    background-color: rgba(52, 152, 219, 0.8); /* Background color for the captions */
+    color: white;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .control-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  .control-btn:hover {
+    background-color: #2980b9;
+  }
+  

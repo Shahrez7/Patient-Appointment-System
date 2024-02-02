@@ -1,0 +1,40 @@
+/* src/components/ImageGrid.css */
+.image-grid {
+    margin-top: 30px;
+  }
+  
+  .image-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .img-fluid {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+    border: 5px solid #3498db; /* Initial border color */
+  border-radius: 10px; /* Border radius for a rectangular shape */
+  }
+  
+  .image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(52, 152, 219, 0.8); /* Background color with opacity */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    opacity: 0; /* Initially transparent */
+    transition: opacity 0.5s ease;
+  }
+  
+  .image-container:hover .img-fluid {
+    transform: scale(1.6); 
+    cursor: pointer;/* Zoom effect on hover */
+  }
+  
+  .image-container:hover .image-overlay {
+    opacity: 1; /* Fully visible on hover */
+  }
+  

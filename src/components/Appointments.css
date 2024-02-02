@@ -1,0 +1,96 @@
+/* Appointments.css */
+
+.appointments-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #35648e;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(53, 100, 142, 0.8);
+    color: #fff;
+  }
+  
+  .appointments-list-container {
+    flex: 1;
+  }
+  
+  .appointments-heading {
+    color:thistle;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px rgba(1, 12, 25, 0.8); /* Colored shadow with a glow effect */
+  }
+  .buzzer-button {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform transition */
+}
+
+.buzzer-button:hover {
+    background-color: #c0392b;
+    transform: scale(1.3) rotate(20deg); /* Added scale and rotate transformations on hover */
+}
+  
+  .appointments-list {
+    max-height: 300px; /* Adjust the maximum height as needed */
+    overflow-y: auto;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .appointment-item {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .patient-details-container {
+    flex: 1;
+    padding: 0 20px; /* Add padding for spacing */
+  }
+  /* Add these styles to the existing Appointments.css */
+
+.patient-details-container {
+    flex: 1;
+    padding: 0 20px; /* Add padding for spacing */
+  }
+  
+  .patient-details {
+    background-color: #34dbba;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+.bt{
+    background-color: gray;
+}
+  
+  .patient-details-heading {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-decoration: underline;
+  }
+  
+  .patient-details-item {
+    margin-bottom: 10px;
+  }
+  
+  
+  /* Style the patient details as needed */
+  

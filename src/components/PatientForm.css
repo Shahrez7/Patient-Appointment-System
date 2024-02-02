@@ -1,0 +1,68 @@
+/* PatientForm.css */
+
+.patient-form-container {
+  max-width: 400px;
+  margin: 20px auto; /* Add some margin from the top */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px; /* Increase border radius for rounded corners */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.8); /* Add a semi-transparent dark background */
+  color: #fff; /* Set text color to white */
+}
+
+h2 {
+  text-align: center;
+  color: #fff;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #fff; /* Set label text color to white */
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+ 
+  box-sizing: border-box;
+  background-color: #333; /* Dark background color */
+  color: #fff; /* Set text color to white */
+  border: 1px solid #555; /* Darker border color */
+}
+
+button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: 2px solid #297fb8;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 0 auto; /* Center the button */
+}
+
+button:hover {
+  background-color: #297fb8; /* Darker hover color */
+}
+/* Add this to your PatientForm.css */
+
+.submit-success-message {
+  text-align: center;
+  margin-top: 20px; /* Adjust the top margin as needed */
+  padding: 20px;
+  border: 1px solid #4CAF50; /* Green border color */
+  border-radius: 5px;
+  background-color: #4CAF50; /* Green background color */
+  color: #fff; /* White text color */
+  font-size: 1.5rem; /* Adjust font size as needed */
+}
+
+.submit-success-message span {
+  font-size: 2rem; /* Make the green tick larger */
+}
